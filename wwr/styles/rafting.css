@@ -8,7 +8,7 @@
 }
 
 :root {
-    --primary-color: #1E6091;
+    --primary-color: #184E77;
     --secondary-color: #34A0A4;
     --accent1-color: #D9ED92;
     --accent2-color: #99D98C;
@@ -63,7 +63,7 @@ h1 {
     position: absolute;
     font-family: Lobster, "Bradley Hand", cursive;
     font-size: 2rem;
-    color: var(--accent2-color);
+    color: var(--accent1-color);
 	top: 50px;
 	left: 15px;
 	background: radial-gradient(var(--primary-color), var(--secondary-color));
@@ -85,12 +85,12 @@ h1 {
 	bottom: 10px;
 	left: 15px;
     right: 15px;
-    color: var(--accent1-color);
+    color: var(--accent2-color);
 	background: radial-gradient(var(--primary-color), var(--secondary-color));
     border: var(--typical-border);
 	padding: 0.65rem;
 	box-shadow: 0 0 30px #111;
-	opacity: 0.7;
+	opacity: 0.9;
 }
 
 h2 {
