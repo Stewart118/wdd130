@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <meta name="description" content="A poll form activity for week 5.">
+        <meta name="author" content="John Stewart">
+    </head>
+        <header>
+            <h1>WDD 130 | John Stewart | HTML Form - User Poll</h1>
+        </header>
+        <main>
+            <form>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname"><br>
+                    <label for="useremail">Email:</label><br>
+                    <input type="email" id="useremail" name="useremail"><br>
+                </fieldset>
+            </form>
+            <form>
+                <fieldset>
+                    <legend>Questions</legend>
+                    <label for="browser">What is your favorite browser?</label><br>
+                    <select id="browser" name="browser">
+                        <option value="chrome">Chrome</option>
+                        <option value="firefox">Firefox</option>
+                        <option value="safari">Safari</option>
+                        <option value="edge">Edge</option>
+                    </select><br>
+                    <label>Do you have a pet?<input type="checkbox" id="pet" name="pet"></label><br>
+                    <label>List the places you have lived:<br><textarea id="feedback" name="feedback" rows="7"></textarea></label>
+                </fieldset>
+            </form>
+            <button type="submit">Submit Poll</button>
+        </main>
+        <footer>
+            <p>©️2025 🏛️ John Stewart 🏛️ Georgia</p>
+        </footer>
+    </body>
+</html>
