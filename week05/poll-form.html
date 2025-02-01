@@ -6,6 +6,7 @@
         <title>Document</title>
         <meta name="description" content="A poll form activity for week 5.">
         <meta name="author" content="John Stewart">
+        <link rel="stylesheet" href="styles/poll-form.css">
     </head>
         <header>
             <h1>WDD 130 | John Stewart | HTML Form - User Poll</h1>
@@ -14,24 +15,36 @@
             <form>
                 <fieldset>
                     <legend>Contact Information</legend>
-                    <label for="fullname">Full Name:</label><br>
-                    <input type="text" id="fullname" name="fullname"><br>
-                    <label for="useremail">Email:</label><br>
-                    <input type="email" id="useremail" name="useremail"><br>
+                    <div class="form-item column2">
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname">
+                    </div>
+                    <div class="form-item column2">
+                        <label for="useremail">Email:</label>
+                        <input type="email" id="useremail" name="useremail">
+                    </div>
                 </fieldset>
             </form>
             <form>
                 <fieldset>
                     <legend>Questions</legend>
-                    <label for="browser">What is your favorite browser?</label><br>
-                    <select id="browser" name="browser">
-                        <option value="chrome">Chrome</option>
-                        <option value="firefox">Firefox</option>
-                        <option value="safari">Safari</option>
-                        <option value="edge">Edge</option>
-                    </select><br>
-                    <label>Do you have a pet?<input type="checkbox" id="pet" name="pet"></label><br>
-                    <label>List the places you have lived:<br><textarea id="feedback" name="feedback" rows="7"></textarea></label>
+                    <div class="form-item column1">
+                    <label for="browser">What is your favorite browser?</label>
+                        <select id="browser" name="browser">
+                            <option value="chrome">Chrome</option>
+                            <option value="firefox">Firefox</option>
+                            <option value="safari">Safari</option>
+                            <option value="edge">Edge</option>
+                        </select>
+                    </div>
+                    <div class="form-item column1">
+                        <label for="pet">Do you have a pet?</label>
+                        <input type="checkbox" id="pet" name="pet">
+                    </div>
+                    <div class="form-item">
+                        <label class="feedback-label" for="feedback">List the places you have lived:</label>
+                        <textarea id="feedback" name="feedback" rows="7"></textarea>
+                    </div>
                 </fieldset>
             </form>
             <button type="submit">Submit Poll</button>
