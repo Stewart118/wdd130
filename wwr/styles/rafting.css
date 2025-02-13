@@ -102,9 +102,12 @@ h1 {
 
 .hero article {
     position: absolute;
-	bottom: 200px;
+    bottom: 200px;
+    max-width: 30%;
+	right: 15px;
+	/* bottom: 200px;
 	left: 15px;
-    right: 15px;
+    right: 15px; */
     color: var(--accent2-color);
 	background: radial-gradient(var(--primary-color), var(--secondary-color));
     border: var(--typical-border);
@@ -114,10 +117,59 @@ h1 {
 }
 
 h2,
+caption,
 legend {
     font-family: Lobster, "Bradley Hand", cursive;
     font-size: 1.5rem;
     color: var(--secondary-color);
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+}
+
+caption {
+    padding: 1rem;
+}
+
+thead,
+tfoot {
+  background-color: rgb(228 240 245);
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+}
+
+th {
+    font-family: Lobster, "Bradley Hand", cursive;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+
+td {
+    font-family: var(--typical-p-fontfamily);
+    font-size: var(--typical-p-fontsize);
+}
+
+td:last-of-type {
+  text-align: center;
+}
+
+tbody > tr:nth-of-type(even) {
+  background-color: rgb(237 238 242);
+}
+
+.next-adventure {
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
 h3 {
