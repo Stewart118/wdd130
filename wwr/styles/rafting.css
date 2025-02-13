@@ -151,7 +151,7 @@ td {
 th {
     font-family: Lobster, "Bradley Hand", cursive;
     font-size: 1.2rem;
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 td {
